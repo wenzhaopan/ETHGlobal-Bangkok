@@ -107,7 +107,7 @@ bash
 - **Slide Deck**: https://docs.google.com/presentation/d/1poyc4fBmh7Pbp_ZEdji4dSJ16PIGDnSi8h7hqHhO8Ro/edit?usp=sharing
 
 ---
-### Zircuit
+### Linea
 #### Linea Contract Address and Lineascan Link
 - **Contract Address**: [Insert Linea contract address here]
 - **LineaScan Link**: [Insert link to LineaScan here]
