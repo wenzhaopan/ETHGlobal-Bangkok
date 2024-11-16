@@ -1,6 +1,6 @@
 import { Chain, createPublicClient, http, PublicClient } from "viem";
 import dotenv from "dotenv";
-import { mainnet, avalanche, optimism, arbitrum, base, polygon, zircuit } from 'viem/chains';
+import { mainnet, avalanche, optimism, arbitrum, base, polygon, zircuit, linea, scroll } from 'viem/chains';
 
 dotenv.config();
 const RPC_API_KEY = process.env.RPC_API_KEY;
@@ -13,6 +13,8 @@ export const chainIdToChain: Record<number, Chain> = {
     8453: base,
     137: polygon,
     48900: zircuit,
+    59144: linea,
+    534352: scroll,
   };
 
 export const clients: Record<number, PublicClient> = {
@@ -42,6 +44,14 @@ export const clients: Record<number, PublicClient> = {
     }),
     48900: createPublicClient({
       chain: zircuit,
+      transport: http(RPC_API_KEY),
+    }),
+    59144: createPublicClient({
+      chain: linea,
+      transport: http(RPC_API_KEY),
+    }),
+    534352: createPublicClient({
+      chain: scroll,
       transport: http(RPC_API_KEY),
     }),
   };
