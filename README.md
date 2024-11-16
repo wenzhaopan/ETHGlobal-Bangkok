@@ -23,20 +23,20 @@ If we had our aggregator then, it would’ve optimized the route—using Orbiter
 
 ---
 
-## Bounties
+# Bounties
 
-### Zircuit
+## Zircuit
 One-click bridge aggregator that identifies the cheapest route and seamlessly supports multi-hop bridge routes across any input/output bridges and tokens.
 
-#### A short description of what you integrated Zircuit with and how
+### A short description of what you integrated Zircuit with and how
 
 
-#### Team Introduction
+### Team Introduction
 - Matthew Liu - Studying computer science at University of Waterloo. Prev SWE Intern at Nest Wallet.
 
 - Wenzhao Pan - Studying computer science at University of Waterloo. Hack The North 2023 hackathon winner.
 
-#### Instructions for Testing the Integration
+### Instructions for Testing the Integration
 
 1. **Prerequisites**:
    - Install [Node.js](https://nodejs.org/) on your system.
@@ -98,21 +98,21 @@ bash
 
 
 
-#### Feedback
+### Feedback
 **[Provide a description of your experience building on Zircuit.]**
 
 
-#### Demo (Optional)
+### Demo (Optional)
 - **Video Demo**: [Link to video demo (if applicable)]
 - **Slide Deck**: https://docs.google.com/presentation/d/1poyc4fBmh7Pbp_ZEdji4dSJ16PIGDnSi8h7hqHhO8Ro/edit?usp=sharing
 
 ---
-### Linea
-#### Linea Contract Address and Lineascan Link
+## Linea
+### Linea Contract Address and Lineascan Link
 - **Contract Address**: [Insert Linea contract address here]
 - **LineaScan Link**: [Insert link to LineaScan here]
 
-#### Use of Linea
+### Use of Linea
 **[Outline how Linea was used in this project.]**
 
 ---
