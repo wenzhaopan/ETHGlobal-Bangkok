@@ -51,7 +51,7 @@ Wenzhao Pan - Studying computer science at University of Waterloo. Hack The Nort
 
 ## Demo (Optional)
 - **Video Demo**: [Link to video demo (if applicable)]
-- **Slide Deck**: [Link to slide deck (if applicable)]
+- **Slide Deck**: https://docs.google.com/presentation/d/1poyc4fBmh7Pbp_ZEdji4dSJ16PIGDnSi8h7hqHhO8Ro/edit?usp=sharing
 
 ---
 
