@@ -1,12 +1,27 @@
-# Project Name
+# Bridge Flow
 
 ## Description
-**[Provide a clear, one-sentence description of your submission.]**
+At Devcon, we attended a number of talks about the need for unifying the Ethereum ecosystem. We recently experienced the pain of fragmentation between L2s when we wanted to bridge to Zircuit. We only had funds on L2s, so we wanted to bridge from Arbitrum to Zircuit. However, it turns out that Zircuit's native bridge only supports bridging from Ethereum. We only had funds on Arbitrum, so we had to manually swap USDC to Ethereum, bridge to Ethereum L1, and then bridge again to Zircuit.
+
+The process was frustrating—it took over an hour, required us to wait for one bridge to complete before manually initiating the next, and cost us significantly more in gas fees since we had to use Ethereum L1.
+
+With just a single click, our solution identifies the most cost-efficient route and handles all intermediary bridging seamlessly. Additionally, since our solution performs intermediary swaps through dApp-controlled contracts, users don’t need to have gas on intermediary chains to execute those swaps. If we had our aggregator then, it would’ve optimized the route—using Orbiter to bridge directly between L2s—saving us both time and gas fees. This tool is a step toward a unified, user-friendly Ethereum ecosystem.
+
+### How it's made
 
 ---
 
-## Integration Overview
-**[Provide a short description of what you integrated Zircuit with and how.]**
+## Bounties
+
+### Zircuit
+**a clear short one-sentence description of your submission**
+One-click bridge aggregator that identifies the cheapest route and seamlessly supports multi-hop bridge routes across any input/output bridges and tokens.
+
+**a short description of what you integrated Zircuit with and how**
+
+**short description of the team and their backgrounds**
+Matthew Liu - Studying computer science at University of Waterloo. Prev SWE Intern at Nest Wallet.
+Wenzhao Pan - Studying computer science at University of Waterloo. Hack The North 2023 hackathon winner. 
 
 ---
 
