@@ -18,7 +18,7 @@ One-click bridge aggregator that identifies the cheapest route and seamlessly su
 
 **a short description of what you integrated Zircuit with and how**
 
-**Team Description: **
+**Team Description:**
 Matthew Liu - Studying computer science at University of Waterloo. Prev SWE Intern at Nest Wallet.
 Wenzhao Pan - Studying computer science at University of Waterloo. Hack The North 2023 hackathon winner. 
 
