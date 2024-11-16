@@ -25,16 +25,58 @@ One-click bridge aggregator that identifies the cheapest route and seamlessly su
 - Wenzhao Pan - Studying computer science at University of Waterloo. Hack The North 2023 hackathon winner.
 
 ### Instructions for Testing the Integration
+
 1. **Prerequisites**:
-   - [List any software, accounts, or dependencies required.]
-   - [Provide any necessary links for setup.]
+   - Install [Node.js](https://nodejs.org/) on your system.
+   - Ensure you have a wallet compatible with the application (e.g., MetaMask).
+   - Clone the repository from GitHub:
+     ```bash
+     git clone https://github.com/wenzhaopan/ETHGlobal-Bangkok.git
+     ```
 
 2. **Steps to Test**:
-   - [Step-by-step guide on how to test the integration.]
-   - [Include any relevant commands, configurations, or parameters.]
+   - **Frontend Setup**:
+     1. Navigate to the `frontend` directory:
+        ```bash
+        cd ETHGlobal-Bangkok/frontend
+        ```
+     2. Install dependencies:
+        ```bash
+        npm install
+        ```
+     3. Start the frontend server:
+        ```bash
+        npm run dev
+        ```
+   - **Backend Setup**:
+     1. Open a new terminal and navigate to the `backend` directory:
+        ```bash
+        cd ETHGlobal-Bangkok/backend
+        ```
+     2. Install dependencies:
+        ```bash
+        npm install
+        ```
+     3. Start the backend server:
+        ```bash
+        npm run dev
+        ```
+   - **Testing the Integration**:
+     1. Open the frontend in your browser (default: `http://localhost:3000`).
+     2. Connect your wallet using the UI.
+     3. Select the input and output chains.
+     4. Find the addresses of the input and output tokens for the selected chains.
+     5. Open the route-finder code (located in the backend) and configure it:
+        - Input the token addresses.
+        - Ensure the route-finder uses **CCTP**, **Orbiter.finance**, and **Rhino.fi** to verify a valid route exists.
+     6. Start the bridging process using the route-finder.
+     7. Monitor the bridging process (it may take 10-60 minutes depending on the calculated route).
 
 3. **Expected Outcomes**:
-   - [Detail what users should expect at each step or upon successful testing.]
+   - **Frontend**: The wallet should connect successfully, and you should be able to select input/output chains.
+   - **Backend**: The server should validate the input and output tokens and calculate a valid bridging route.
+   - **Bridging Process**: The tokens should successfully bridge between chains within 10-60 minutes based on the optimal route.
+
 
 
 ### Feedback
