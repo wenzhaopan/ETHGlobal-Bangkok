@@ -16,20 +16,15 @@ With just a single click, our solution identifies the most cost-efficient route 
 ### Zircuit
 One-click bridge aggregator that identifies the cheapest route and seamlessly supports multi-hop bridge routes across any input/output bridges and tokens.
 
-**a short description of what you integrated Zircuit with and how**
+### A short description of what you integrated Zircuit with and how
 
-**Team Description:**
-Matthew Liu - Studying computer science at University of Waterloo. Prev SWE Intern at Nest Wallet.
-Wenzhao Pan - Studying computer science at University of Waterloo. Hack The North 2023 hackathon winner. 
 
----
+### Team Introduction
+- Matthew Liu - Studying computer science at University of Waterloo. Prev SWE Intern at Nest Wallet.
 
-## Team Introduction
-**[Provide a short description of the team and their backgrounds.]**
+- Wenzhao Pan - Studying computer science at University of Waterloo. Hack The North 2023 hackathon winner.
 
----
-
-## Instructions for Testing the Integration
+### Instructions for Testing the Integration
 1. **Prerequisites**:
    - [List any software, accounts, or dependencies required.]
    - [Provide any necessary links for setup.]
@@ -41,16 +36,20 @@ Wenzhao Pan - Studying computer science at University of Waterloo. Hack The Nort
 3. **Expected Outcomes**:
    - [Detail what users should expect at each step or upon successful testing.]
 
----
 
-## Feedback
+### Feedback
 **[Provide a description of your experience building on Zircuit.]**
 
----
 
-## Demo (Optional)
+### Demo (Optional)
 - **Video Demo**: [Link to video demo (if applicable)]
 - **Slide Deck**: https://docs.google.com/presentation/d/1poyc4fBmh7Pbp_ZEdji4dSJ16PIGDnSi8h7hqHhO8Ro/edit?usp=sharing
+---
+
+ 
+
+---
+
 
 ---
 
