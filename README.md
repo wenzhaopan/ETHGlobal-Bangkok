@@ -14,7 +14,6 @@ With just a single click, our solution identifies the most cost-efficient route 
 ## Bounties
 
 ### Zircuit
-**a clear short one-sentence description of your submission**
 One-click bridge aggregator that identifies the cheapest route and seamlessly supports multi-hop bridge routes across any input/output bridges and tokens.
 
 **a short description of what you integrated Zircuit with and how**
