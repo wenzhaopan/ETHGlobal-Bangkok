@@ -8,6 +8,7 @@ import "../Utils.sol";
 struct Route {
     uint256 currChainId;
     uint256 toChainId;
+    address bridger;
     TokenAmount expectedAmount;
     TokenAmount inputAmount;
     address toAddress;

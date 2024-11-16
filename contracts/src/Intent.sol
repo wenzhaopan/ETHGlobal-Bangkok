@@ -17,8 +17,7 @@ struct Call {
 
 struct Intent {
     Route[] routes;
-    address payable recipient;
-    address payable escrow;
+    address payable deployer;
     uint256 nonce;
 }
 
@@ -43,18 +42,11 @@ contract IntentContract is Initializable {
     /// chain.
     function executeAction(
         Intent calldata intent,
-        address payable caller,
         Call[] calldata preCalls,
         bytes calldata bridgeExtraData
     ) public {
         require(calcIntentHash(intent) == intentHash, "wrong hash");
-        require(msg.sender == intent.escrow, "only escrow");
-
-        for (uint256 i = 0; i < preCalls.length; ++i) {
-            Call calldata call = preCalls[i];
-            (bool success, ) = call.to.call{value: call.value}(call.data);
-            require(success, "pre-call failed");
-        }
+        require(msg.sender == intent.deployer, "only deployer");
 
         Route memory route = getRoute(intent);
 
@@ -62,9 +54,28 @@ contract IntentContract is Initializable {
         uint256 tokenBalance = route.expectedAmount.token.balanceOf(address(this));
         require(tokenBalance >= route.expectedAmount.amount, "insufficient tokens received");
 
-        // Bridge the tokens
+        for (uint256 i = 0; i < preCalls.length; ++i) {
+            Call calldata call = preCalls[i];
+            (bool success, ) = call.to.call{value: call.value}(call.data);
+            require(success, "pre-call failed");
+        }
 
-        selfdestruct(intent.escrow);
+        // Check that there's sufficient bridge input token
+        uint256 inputBalance = route.inputAmount.token.balanceOf(address(this));
+        require(inputBalance >= route.inputAmount.amount, "insufficient tokens to bridge");
+
+        if (route.toChainId == 0) {
+            // If this is the final destination, send the tokens to the recipient
+            route.expectedAmount.token.safeTransfer(route.toAddress, route.expectedAmount.amount);
+        } else {
+            // Approve the bridge and initiate bridging
+            route.inputAmount.token.forceApprove({
+                spender: address(route.bridger),
+                value: route.inputAmount.amount
+            });
+
+            IBridger(route.bridger).bridgeToChain(route, bridgeExtraData);
+        }
     }
 
     function getRoute(Intent calldata intent) public view returns (Route memory) {
