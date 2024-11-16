@@ -50,7 +50,7 @@ export async function getAttestation(message: Hex): Promise<Hex | null> {
         status: string;
     };
     console.log(
-        `[ORDER] retrieved CCTP attestation: ${JSON.stringify(
+        `retrieved CCTP attestation: ${JSON.stringify(
         attestationResponse,
         )}`,
     );
