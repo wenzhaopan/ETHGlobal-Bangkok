@@ -143,11 +143,11 @@ Also, when deploying contracts our deployment transaction was reverting but it w
 ---
 ## Linea
 
-## Contracts:
+### Contracts:
 https://lineascan.build/address/0x9B5F478963D96002E21c82DdDfd1C185d51faF11#code
 https://lineascan.build/address/0x8fA128A9d46F9678444C4283108997A542714f16#code
 
-## Use of Linea:
+### Use of Linea:
 We aimed to build our bridge aggregator so that bridging happens permissionlessly and trustlessly. We accomplished this using the idea of "intent addresses" and CREATE2. We deployed our contracts to Linea to enable trustless bridging with relayers. We deployed a contract to interact with a bridger, an intent factory contract to deploy intents, and a relayer contract which relayers can use to permisionlessly fulfill intents. Here is a technical breakdown of how we used intents.
 
 CREATE2 is an EVM opcode that allows you to pre-determine the address a contract will be deployed to based on the constructor arguments and contract code. Changing the contract source code will result in changing the CREATE2 address.
