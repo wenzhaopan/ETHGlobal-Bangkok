@@ -1,7 +1,6 @@
 import express, { Request, Response } from "express";
 import { createGetBalanceJob } from "./cron";
 import { base } from 'viem/chains';
-import { zeroAddress } from "viem";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
