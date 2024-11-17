@@ -142,10 +142,7 @@ Also, when deploying contracts our deployment transaction was reverting but it w
 
 ---
 ## Linea
-### Contracts:
-- 
 
-### Use of Linea
 ## Contracts:
 https://lineascan.build/address/0x9B5F478963D96002E21c82DdDfd1C185d51faF11#code
 https://lineascan.build/address/0x8fA128A9d46F9678444C4283108997A542714f16#code
