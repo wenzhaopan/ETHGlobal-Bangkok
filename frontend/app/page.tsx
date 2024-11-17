@@ -14,13 +14,13 @@ import { ExternalLink } from "./components/links";
 import { Wallet } from "./components/wallet";
 
 const queryClient = new QueryClient();
-
 const CryptoBridge = () => {
-  const [fromChain, setFromChain] = useState("Ethereum");
-  const [toChain, setToChain] = useState("Polygon");
+  // Default to "Select Chain" initially
+  const [fromChain, setFromChain] = useState("Select Chain");
+  const [toChain, setToChain] = useState("Select Chain");
   const [bridgeAmount, setBridgeAmount] = useState("");
 
-  const chains = ["Ethereum", "Binance Smart Chain", "Polygon"];
+  const chains = ["Select Chain", "Ethereum", "Polygon", "Zircuit", "Base", "Linea", "Scroll"];
 
   const handleBridge = () => {
     if (!bridgeAmount) {
@@ -28,11 +28,15 @@ const CryptoBridge = () => {
       return;
     }
 
+    if (fromChain === "Select Chain" || toChain === "Select Chain") {
+      alert("Please select valid chains for bridging");
+      return;
+    }
+
     alert(
       `Bridging from ${fromChain} to ${toChain} with amount ${bridgeAmount}`
     );
     window.location.href = '/bridge-status';
-
   };
 
   return (
