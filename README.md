@@ -173,11 +173,11 @@ The intent addresses architecture enables a seamless UX for the user. The user d
 
 ## Polygon
 ### Contracts
-cctp bridger: https://polygonscan.com/address/0x915c26782031b38636F6F987b75D3bd4a1E6b62e#code
-intent factory: https://polygonscan.com/address/0x7D7F0D8f2941247918795346DFC5AFd2c98a20b8#code
-relayer contract: https://polygonscan.com/address/0x88b638d93ca5278ef77ea977b14b4dc347fe38d8#code
+- cctp bridger: https://polygonscan.com/address/0x915c26782031b38636F6F987b75D3bd4a1E6b62e#code
+- intent factory: https://polygonscan.com/address/0x7D7F0D8f2941247918795346DFC5AFd2c98a20b8#code
+- relayer contract: https://polygonscan.com/address/0x88b638d93ca5278ef77ea977b14b4dc347fe38d8#code
 
 ## Scroll:
 Contracts:
-intent factory addr: https://scrollscan.com/address/0x9B5F478963D96002E21c82DdDfd1C185d51faF11#code
-CCTP bridger: https://scrollscan.com/address/0x9B5F478963D96002E21c82DdDfd1C185d51faF11#code
+- intent factory addr: https://scrollscan.com/address/0x9B5F478963D96002E21c82DdDfd1C185d51faF11#code
+- CCTP bridger: https://scrollscan.com/address/0x9B5F478963D96002E21c82DdDfd1C185d51faF11#code
